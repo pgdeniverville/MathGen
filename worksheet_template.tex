@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Math Worksheet}
+
+{% for problem in problems %}
+\noindent \textbf{Problem {{ loop.index }}:} \quad {{ problem[0] }} \\
+\bigskip
+{% endfor %}
+
+\newpage
+\section*{Solutions}
+
+{% for problem in problems %}
+\noindent \textbf{Problem {{ loop.index }}:} \quad {{ problem[0] }} \\
+\textbf{Solution:} \quad {{ problem[1] }} \\ 
+\bigskip
+{% endfor %}
+
+\end{document}
